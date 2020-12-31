@@ -1,0 +1,16 @@
+# Default values for tennants.
+
+# kind -- DaemonSet or Deployment
+kind: namespace
+
+# replicaCount -- Only applicable if kind=Deployment
+replicaCount: 1
+
+image:
+  repository: fluent/fluent-bit
+  pullPolicy: Always
+  # tag:
+
+imagePullSecrets: []
+nameOverride: ""
+fullnameOverride: ""
